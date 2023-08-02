@@ -1,9 +1,24 @@
 body {
-    background-color: #4893A1;
+    background-color: #c9c9c9;
+}
+
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+img,
+dd {
+  margin: 0;
 }
 p {
     padding: 1.5rem;
-    border-radius: 1.5rem;
     color:#000;
 }
 header {
@@ -15,9 +30,23 @@ h1{
   font-family:'Courier New';
 }
 img {
-    width:100%;
+    width: 100%;
     border-radius: 0.5rem;
     height: auto;
+    display: block;
+}
+
+.heroimg{
+    width: 1920px;
+    height: 500px;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.manufactuerimg{
+    width: 720px;
+    border-radius: 0.5rem;
+    height: 300px;
     display: block;
 }
 .manufactuer{
@@ -29,9 +58,9 @@ img {
      'three'
      'four';
   
-    padding-block: 2rem;
-    border-radius: 0.5rem;
-    background-color: #0D5E6D;
+    background-color: #c9c9c9;
+    width: 720px;
+    height: 300px;
   }
 
 .manufactuer:nth-child(1){
@@ -68,7 +97,7 @@ img {
      'four';
   
     padding-block: 2rem;
-    border-radius: 0.5rem;
+    background-color: #6d6d6d;
   }
 
 .ride:nth-child(1){
@@ -119,11 +148,12 @@ img {
 .hero-grid{
     display: grid;
     gap: 1.5rem;
+    padding-bottom: 0.5rem;
     grid-template-areas:
      'one';
-    padding-block: 2rem;
-    border-radius: 0.5rem;
-    background-color: #39626A;
+    background-color: #c9c9c9;
+    width: 1920px;
+    height: 500px;
 }
 
 .hero-grid:nth-child(1){
@@ -137,7 +167,6 @@ img {
 }
 
 /* colours
-39626A
 5FBBCC
-0D5E6D
-4893A1
+c9c9c9
+464646
