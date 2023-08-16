@@ -1,5 +1,8 @@
+
+/* Sets up Custom font */
 @font-face {
     font-family: 'Nunito';
+    /* Imports font from URL */
     src: url(Fonts/Nunito-VariableFont_wght.ttf);
 }
 
@@ -19,39 +22,74 @@ img,
 dd {
   margin: 0;
 }
+
 body {
     background-color: #efefef;
+    /* sets the new max screen size and margin */
     width:96vw;
     margin: 3vw;
 }
 p {
+    /* increase box size for writing and gives it the custom font*/
     padding: 1.5rem;
     color:#000;
     font-family: Nunito;
 }
 header {
     color: #000;
+    /* Gives headers a different font */
     font-family:'Courier New';
 }
 h1{
   color: #000;
   font-family:'Courier New';
+  /* aligns text in center */
   text-align: center;
 }
 img {
+    /* makes images fill the grid box and as a slight cruve around the edges */
     width: 100%;
     border-radius: 0.5rem;
     height: auto;
     display: block;
 }
-
+.writing{
+    /* gives part of the text new properties so it fills the space better and looks better */
+    background-color: #efefef;
+    height:30vh;
+    box-shadow:0px 4px 8px #5FBBCC;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+}
+/* Sets the size for the Hero image so it fills the correct space */
 .heroimg{
     width: 95vw;
     height: 40vh;
     border-radius: 0.5rem;
     display: block;
 }
+/* defines the childs, size and space the top hero grid fills */
+.hero-grid{
+    display: grid;
+    gap: 1.5rem;
+    padding-bottom: 0.5rem;
+    grid-template-areas:
+     'one';
+    background-color: #efefef;
+    width: 96vw;
 
+}
+/* defines the childs the hero grid*/
+.hero-grid:nth-child(1){
+    grid-area:one
+}
+/* places the location of the hero grid */
+.hero-grid{
+    grid-template-areas: 
+    "one";
+
+}
+/* gives the manufactering images the right size and gives them a drop shadow */
 .manufactuerimg{
     width: 47vw;
     border-radius: 0.5rem;
@@ -59,6 +97,7 @@ img {
     display: block;
     box-shadow:0px 4px 8px #5FBBCC;
 }
+/* defines the childs, size and space the manfuacter grid fills */
 .manufactuer{
     display: grid;
     gap: 1.5rem;
@@ -72,6 +111,7 @@ img {
     width: 47vw;
   }
 
+  /* defines the childs in the manfuactuer grid */
 .manufactuer:nth-child(1){
     grid-area:one;
 }
@@ -87,7 +127,7 @@ img {
 .manufactuer:nth-child(4){
     grid-area:four;
 }  
-
+/* places the childs in the right area which I can change */
 .manufactuer{
     grid-template-areas: 
     'one two'
@@ -96,6 +136,7 @@ img {
 
 }
 
+/* defines the childs, size, drop shadow and space the ride grid fills */
 .ride{
     display: grid;
     gap: 1.5rem;
@@ -111,18 +152,16 @@ img {
     width: 47vw;
   }
 
+  /* defines the childs in the ride grid */
 .ride:nth-child(1){
     grid-area:one;
 }
-
 .ride:nth-child(2){
     grid-area:two;
 }  
-
 .ride:nth-child(3){
     grid-area:three;
 }  
-
 .ride:nth-child(4){
     grid-area:four;
 }  
@@ -138,7 +177,7 @@ img {
 .ride:nth-child(8){
     grid-area:eight;
 }  
-
+/* places the childs in the right area which I can change without changing the html */
 .ride{
     grid-template-areas: 
     'one two'
@@ -149,45 +188,14 @@ img {
 
 }
 
-.logo{
-    background-color: #5FBBCC;
-}
 
-.writing{
-    background-color: #efefef;
-    height:30vh;
-    box-shadow:0px 4px 8px #5FBBCC;
-    border-radius: 0.5rem;
-    font-size: 1.7rem;
-}
-
+/* makes the wrinting in the ride grid bigger so it pops better */
 .rides-writing{
     font-size: 1.5rem;
 }
-.hero-grid{
-    display: grid;
-    gap: 1.5rem;
-    padding-bottom: 0.5rem;
-    grid-template-areas:
-     'one';
-    background-color: #efefef;
-    width: 96vw;
 
-}
-
-.hero-grid:nth-child(1){
-    grid-area:one
-}
-
-.hero-grid{
-    grid-template-areas: 
-    "one";
-
-}
 
 /* colours
 5FBBCC
 c9c9c9
 464646
-
-Add writing next time and make the drop shadows a little better and give the ride text a class
