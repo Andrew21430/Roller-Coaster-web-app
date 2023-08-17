@@ -113,6 +113,8 @@ img {
      'four';
   
     background-color: #efefef;
+    border-radius: 0.5rem;
+    box-shadow:0px 4px 8px #5FBBCC;
     width: 47vw;
   }
 
