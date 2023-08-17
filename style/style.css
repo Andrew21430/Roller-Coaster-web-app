@@ -200,6 +200,7 @@ img {
     .rides-writing{
         font-size: 1.5rem;
     }
+    /*sets the size for ride images*/
     .rideimg{
         width: 47vw;
         border-radius: 0.5rem;
