@@ -265,6 +265,7 @@ img {
         display: block;
         box-shadow: 0px 4px 8px #5FBBCC;
     }
+    /* sets the size for ride images*/
     .rideimg{
         width: 97vw;
         border-radius: 0.5rem;
