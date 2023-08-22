@@ -19,26 +19,29 @@ blockquote,
 dl,
 img,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 p {
     /* increase box size for writing and gives it the custom font*/
     padding: 1.5rem;
-    color:#000;
+    color: #000;
     font-family: Nunito;
 }
+
 header {
     color: #000;
     /* Gives headers a different font */
-    font-family:'Courier New';
+    font-family: 'Courier New';
 }
-h1{
-  color: #000;
-  font-family:'Courier New';
-  /* aligns text in center */
-  text-align: center;
+
+h1 {
+    color: #000;
+    font-family: 'Courier New';
+    /* aligns text in center */
+    text-align: center;
 }
+
 img {
     /* makes images fill the grid box and as a slight cruve around the edges */
     width: 100%;
@@ -49,99 +52,108 @@ img {
 
 
 /* defines the childs, size and space the top hero grid fills */
-.hero-grid{
+.hero-grid {
     display: grid;
     gap: 1.5rem;
     padding-bottom: 0.5rem;
     grid-template-areas:
-     'one';
+        'one';
     background-color: #efefef;
     width: 96vw;
 
 }
+
 /* defines the childs the hero grid*/
-.hero-grid:nth-child(1){
-    grid-area:one
+.hero-grid:nth-child(1) {
+    grid-area: one
 }
+
 /* places the location of the hero grid */
-.hero-grid{
-    grid-template-areas: 
-    "one";
+.hero-grid {
+    grid-template-areas:
+        "one";
 
 }
 
 /* defines the childs, size and space the manfuacter grid fills */
-.manufactuer{
+.manufactuer {
     display: grid;
     gap: 1.5rem;
     grid-template-areas:
-     'one'
-     'two'
-     'three'
-     'four';
-  
+        'one'
+        'two'
+        'three'
+        'four';
+
     background-color: #efefef;
     width: 47vw;
-  }
-
-  /* defines the childs in the manfuactuer grid */
-.manufactuer:nth-child(1){
-    grid-area:one;
 }
 
-.manufactuer:nth-child(2){
-    grid-area:two;
-}  
+/* defines the childs in the manfuactuer grid */
+.manufactuer:nth-child(1) {
+    grid-area: one;
+}
 
-.manufactuer:nth-child(3){
-    grid-area:three;
-}  
+.manufactuer:nth-child(2) {
+    grid-area: two;
+}
 
-.manufactuer:nth-child(4){
-    grid-area:four;
-}  
+.manufactuer:nth-child(3) {
+    grid-area: three;
+}
+
+.manufactuer:nth-child(4) {
+    grid-area: four;
+}
 
 
 /* defines the childs, size, drop shadow and space the ride grid fills */
-.ride{
+.ride {
     display: grid;
     gap: 1.5rem;
     grid-template-areas:
-     'one'
-     'two'
-     'three'
-     'four';
-  
+        'one'
+        'two'
+        'three'
+        'four';
+
     background-color: #efefef;
     border-radius: 0.5rem;
-    box-shadow:0px 4px 8px #5FBBCC;
-  }
 
-  /* defines the childs in the ride grid */
-.ride:nth-child(1){
-    grid-area:one;
 }
-.ride:nth-child(2){
-    grid-area:two;
-}  
-.ride:nth-child(3){
-    grid-area:three;
-}  
-.ride:nth-child(4){
-    grid-area:four;
-}  
-.ride:nth-child(5){
-    grid-area:five;
-}  
-.ride:nth-child(6){
-    grid-area:six;
-}  
-.ride:nth-child(7){
-    grid-area:seven;
-}  
-.ride:nth-child(8){
-    grid-area:eight;
-}  
+
+/* defines the childs in the ride grid */
+.ride:nth-child(1) {
+    grid-area: one;
+}
+
+.ride:nth-child(2) {
+    grid-area: two;
+}
+
+.ride:nth-child(3) {
+    grid-area: three;
+}
+
+.ride:nth-child(4) {
+    grid-area: four;
+}
+
+.ride:nth-child(5) {
+    grid-area: five;
+}
+
+.ride:nth-child(6) {
+    grid-area: six;
+}
+
+.ride:nth-child(7) {
+    grid-area: seven;
+}
+
+.ride:nth-child(8) {
+    grid-area: eight;
+}
 
 
 
@@ -149,131 +161,149 @@ img {
 
 
 /* sets the location of text so it fits the scereen size better */
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px) {
     body {
         background-color: #efefef;
         /* sets the new max screen size and margin */
-        width:96vw;
+        width: 96vw;
         margin: 3vw;
     }
+
     /* places the childs in the right area which I can change without changing the html */
-    .ride{
-        grid-template-areas: 
-        'one two'
-        'four three'
-        'five six'
-        'eight seven'
+    .ride {
+        box-shadow:0px 4px 8px #5FBBCC;
+        grid-template-areas:
+            'one two'
+            'four three'
+            'five six'
+            'eight seven'
         ;
     }
-    .manufactuer{
-        grid-template-areas: 
-        'one two'
-        'three four'
+
+    .manufactuer {
+        grid-template-areas:
+            'one two'
+            'three four'
         ;
-    
+
     }
-    .writing{
+
+    .writing {
         /* gives part of the text new properties so it fills the space better and looks better */
         background-color: #efefef;
         /* height:30vh; */
-        box-shadow:0px 4px 8px #5FBBCC;
+        box-shadow: 0px 4px 8px #5FBBCC;
         border-radius: 0.5rem;
         font-size: 1.7rem;
     }
+
     /* Sets the size for the Hero image so it fills the correct space */
-    .heroimg{
+    .heroimg {
         width: 95vw;
         height: 40vh;
         border-radius: 0.5rem;
         display: block;
     }
+
     /* gives the manufactering images the right size and gives them a drop shadow */
-    .manufactuerimg{
+    .manufactuerimg {
         width: 47vw;
         border-radius: 0.5rem;
         height: 47vh;
         display: block;
-        box-shadow:0px 4px 8px #5FBBCC;
+        box-shadow: 0px 4px 8px #5FBBCC;
     }
+
     /* makes the wrinting in the ride grid bigger so it pops better */
-    .rides-writing{
+    .rides-writing {
+        width: 42vw;
         font-size: 1.5rem;
-    }
-    /*sets the size for ride images*/
-    .rideimg{
-        width: 47vw;
         border-radius: 0.5rem;
-        height: 47vh;
         display: block;
-        box-shadow:0px 4px 8px #5FBBCC;
+    }
+
+    /*sets the size for ride images*/
+    .rideimg {
+        width: 42vw;
+        border-radius: 0.5rem;
+        height: 42vh;
+        display: block;
+        box-shadow: 0px 4px 8px #5FBBCC;
     }
 }
-@media screen and (max-width: 960px){
+
+@media screen and (max-width: 960px) {
     body {
         background-color: #efefef;
         /* sets the new max screen size and margin */
-        width:97vw;
+        width: 97vw;
         margin: 1vw;
     }
+
     /* places the childs in the right area which I can change without changing the html */
-    .ride{
-        grid-template-areas: 
-        'one' 
-        'two'
-        'three' 
-        'four'
-        'five' 
-        'six'
-        'seven' 
-        'eight'
+    .ride {
+        box-shadow: 0px 4px 8px #5FBBCC;
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'six'
+            'seven'
+            'eight'
         ;
     }
-    .manufactuer{
-        grid-template-areas: 
-        'one' 
-        'two'
-        'three' 
-        'four'
+
+    .manufactuer {
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
         ;
-    
+
     }
-    .writing{
+
+    .writing {
         /* gives part of the text new properties so it fills the space better and looks better */
         background-color: #efefef;
-        box-shadow:0px 4px 8px #5FBBCC;
+        box-shadow: 0px 4px 8px #5FBBCC;
         border-radius: 0.5rem;
         font-size: 1.7rem;
     }
+
     /* Sets the size for the Hero image so it fills the correct space */
-    .heroimg{
+    .heroimg {
         width: 97vw;
         height: 40vh;
         border-radius: 0.5rem;
         display: block;
     }
+
     /* gives the manufactering images the right size and gives them a drop shadow */
-    .manufactuerimg{
+    .manufactuerimg {
         width: 97vw;
         border-radius: 0.5rem;
         height: 97vh;
         display: block;
-        box-shadow:0px 4px 8px #5FBBCC;
+        box-shadow: 0px 4px 8px #5FBBCC;
     }
+
     /* makes the wrinting in the ride grid bigger so it pops better */
-    .rides-writing{
+    .rides-writing {
         width: 92vw;
         font-size: 1.5rem;
         border-radius: 0.5rem;
         display: block;
-        box-shadow: 0px 4px 8px #5FBBCC;
     }
+
     /* sets the size for ride images*/
-    .rideimg{
+    .rideimg {
         width: 97vw;
         border-radius: 0.5rem;
         height: 97vh;
         display: block;
-        box-shadow:0px 4px 8px #5FBBCC;
     }
 }
 
