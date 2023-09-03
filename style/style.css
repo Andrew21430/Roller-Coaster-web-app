@@ -120,6 +120,7 @@ img {
     background-color: #efefef;
     border-radius: 0.5rem;
 
+
 }
 
 /* defines the childs in the ride grid */
@@ -172,6 +173,7 @@ img {
     /* places the childs in the right area which I can change without changing the html */
     .ride {
         box-shadow:0px 4px 8px #5FBBCC;
+        width: 47vw;
         grid-template-areas:
             'one two'
             'four three'
@@ -217,7 +219,8 @@ img {
     /* makes the wrinting in the ride grid bigger so it pops better */
     .rides-writing {
         width: 42vw;
-        font-size: 1.5rem;
+        height: 42vh;
+        font-size: 1.25rem;
         border-radius: 0.5rem;
         display: block;
     }
@@ -243,6 +246,7 @@ img {
     /* places the childs in the right area which I can change without changing the html */
     .ride {
         box-shadow: 0px 4px 8px #5FBBCC;
+        width: 97vw;
         grid-template-areas:
             'one'
             'two'
@@ -293,7 +297,7 @@ img {
     /* makes the wrinting in the ride grid bigger so it pops better */
     .rides-writing {
         width: 92vw;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         border-radius: 0.5rem;
         display: block;
     }
